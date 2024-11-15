@@ -1,0 +1,373 @@
+{
+  "doc_body": {
+    "title": "Documentation",
+    "intro": "Documentation is essential when collaborating with others, ensuring that information is clear, accessible, and organized. In this page, you'll find comprehensive details about our findings and experiences in the Centennial OER Lab. Whether you're new to the project or revisiting key concepts, this documentation will guide you through potential challenges you might encounter while working with the OER Lab."
+  },
+  "sections": [
+    {
+      "id": "blank_pg",
+      "title": "Unnecessary Blank Page Removal For PDF Format In Pressbooks",
+      "content": [
+        {
+          "subtitle": "Part 1: Introduction to Blank Page Issues",
+          "text": [
+            {
+              "content": "When exporting Pressbooks in PDF (for print) or PDF (for digital distribution) format it will create unnecessary and random blank pages in the book.",
+              "images": [
+                { "src": "/src/assets/blank_pg/blank_pg1.png", "alt": "Highlighting PDF export in Pressbooks" },
+                { "src": "/src/assets/blank_pg/blank_pg2.png", "alt": "An example of unnecessary blank page" }
+              ]
+            }
+          ]
+        },
+        {
+          "subtitle": "Part 2: Removing Unwanted Blank Pages",
+          "text": [
+            {
+              "content": "Blank pages in PDF will be removed when Appearance → Theme Options → PDF Option → Section Openings → No blank pages (for web PDF) is checked.",
+              "images": [
+                { "src": "/src/assets/blank_pg/blank_pg3.png", "alt": "Highlighting PDF setting; Section Opening" }
+              ]
+            },
+            {
+              "content": "Unnecessary/random blank pages will disappear, but a blank page between copyright page and content will remain or appear."
+            }
+          ]
+        }
+      ]
+    },
+    
+    {
+      "id": "img_size_format",
+      "title": "Image Sizing For PDF Format In Pressbooks",
+      "content": [
+        {
+          "subtitle": "Part 1: Understanding Image Sizing Issues",
+          "text": [
+            {
+              "content": "When exporting Pressbooks to PDF (for print) or PDF (for digital distribution), images in the book might appear too large, affecting the layout and readability.",
+              "images": [
+                {
+                  "src": "/src/assets/img_size_format/img_size_format1.png",
+                  "alt": "Comparison of size of two images on PDF export"
+                }
+              ]
+            },
+            {
+              "content": "To ensure that images display correctly in the PDF format, you need to adjust their size as follows:"
+            },
+            {
+              "content": "- Width: 675px (2cm margin from left and right)"
+            },
+            {
+              "content": "- Height: 850px (if one whole image on a page)"
+            }
+            
+          ]
+
+        }
+      ]
+    },
+    {
+      "id": "latex_in_hp5",
+      "title": "Using LaTeX In H5P & Implementing In Pressbooks",
+      "content": [
+        {
+          "subtitle": "Introduction",
+          "text": [
+            {
+              "content": "The Pressbooks H5P Content does not allow direct LaTeX formatting in the template."
+            },
+            {
+              "content": "Use the eCampusOntario H5P Studio to implement LaTeX format in H5P templates."
+            }
+          ]
+        },
+        {
+          "subtitle": "LaTeX Formats in H5P",
+          "text": [
+            {
+              "content": "According to H5P, the following LaTeX formats should be used:"
+            },
+            {
+              "content": "\\( some LaTeX \\) for inline LaTeX, commonly used within sentences in text."
+            },
+            {
+              "content": "\\[ some LaTeX \\] or optionally $$ some LaTeX $$ for block LaTeX, typically used as a standalone centered formula."
+            }
+          ]
+        },
+        {
+          "subtitle": "Examples",
+          "text": [
+            {
+              "content": "For example:"
+            },
+            {
+              "content": "Inline: \\( h_{\\text{max}} = \\frac{v_i^2}{2a} \\)"
+            },
+            {
+              "content": "Block: \\[ h_{\\text{max}} = \\frac{v_i^2}{2a} \\] or $$ h_{\\text{max}} = \\frac{v_i^2}{2a} $$",
+              "images": [
+                {
+                  "src": "/src/assets/latex_h5p/latex_h5p1.png",
+                  "alt": "An example of LaTeX used in H5P"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "subtitle": "Downloading and Uploading H5P Templates",
+          "text": [
+            {
+              "content": "After creating the H5P template in eCampusOntario H5P Studio, press the Reuse button to download the template as an .h5p file.",
+              "images": [
+                {
+                  "src": "/src/assets/latex_h5p/latex_h5p2.png",
+                  "alt": "Highlighting REUSE button at eCampusOntario H5P Studio"
+                },
+                {
+                  "src": "/src/assets/latex_h5p/latex_h5p3.png",
+                  "alt": "Highlighting downloading H5P content into .h5p file"
+                }
+              ]
+            },
+            {
+              "content": "Upload the .h5p file to Pressbooks H5P to use it in the book.",
+              "images": [
+                {
+                  "src": "/src/assets/latex_h5p/latex_h5p4.png",
+                  "alt": "Highlighting uploading .h5p file on to Pressbooks H5P"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "frac_latex",
+      "title": "Guide to Fractions in LaTeX",
+      "content": [
+        {
+          "subtitle": "Issue with Fraction Size",
+          "text": [
+            {
+              "content": "The accessibility checker points out how the fraction portion of the LaTeX is small.",
+              "images": [
+                {
+                  "src": "/src/assets/frac_latex/frac_latex1.png",
+                  "alt": "Highlighting small text error of fractions used in LaTeX format on WAVE",
+                  "height": 480,
+                  "width": 1080
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "subtitle": "Adjusting Fraction Size with CSS",
+          "text": [
+            {
+              "content": "Input the CSS code below into Pressbooks Admin → Appearance → Custom Styles → Your Web Styles.",
+              "images": [
+                {
+                  "src": "/src/assets/frac_latex/frac_latex2.png",
+                  "alt": "Highlighting code input into Pressbooks Custom Styles",
+                  "height": 520,
+                  "width": 1080
+                }
+              ]
+            },
+            {
+              "content": ".mjx-mfrac { font-size: 25px; }"
+            },
+            {
+              "content": ".mjx-mfrac would only alter the fraction part of a LaTeX."
+            },
+            {
+              "content": "The 25px size goes with the default LaTeX font."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "canva_upload",
+      "title": "Upload File onto Canva",
+      "content": [
+        {
+          "subtitle": "Steps to Upload a File",
+          "text": [
+            {
+              "content": "In Canva, you can upload multiple different files including .psd file (Photoshop file) and edit it. The process is as follows:"
+            },
+            {
+              "content": "Step 1: Log in to Canva and go to the landing page.",
+              "images": [
+                {
+                  "src": "/src/assets/latex_h5p/latex_h5p1.png",
+                  "alt": "Landing page of Canva"
+                }
+              ]
+            },
+            {
+              "content": "Step 2: Click Upload File.",
+              "images": [
+                {
+                  "src": "/src/assets/latex_h5p/latex_h5p2.png",
+                  "alt": "Highlighting upload button on landing page of Canva"
+                }
+              ]
+            },
+            {
+              "content": "Step 3: Choose the file and upload.",
+              "images": [
+                {
+                  "src": "/src/assets/latex_h5p/latex_h5p3.png",
+                  "alt": "Highlighting upload button on Create A Design pop-up page"
+                }
+              ]
+            },
+            {
+              "content": "Step 4: Open the file in Canva and edit it.",
+              "images": [
+                {
+                  "src": "/src/assets/latex_h5p/latex_h5p4.png",
+                  "alt": "An example of .psd file uploaded on Canva"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "geogebra_style",
+      "title": "GeoGebra Style Guide",
+      "content": [
+        {
+          "subtitle": "1. Setting Up the Workspace",
+          "text": [
+            {
+              "content": "Setting Up the Workspace:",
+              "images": [
+                {
+                  "src": "/src/assets/geogebra_style/geogebra_style1.png",
+                  "alt": "Geogebra Calculator Suite landing page",
+                  "height": 520,
+                  "width": 1080
+                },
+                {
+                  "src": "/src/assets/geogebra_style/geogebra_style2.png",
+                  "alt": "Highlighting setting option in Geogebra"
+                },
+                {
+                  "src": "/src/assets/geogebra_style/geogebra_style3.png",
+                  "alt": "Highlighting elements of settings"
+                }
+              ]
+            },
+            {
+              "content": "Follow these instructions to create consistent and clear vector diagrams in GeoGebra."
+              
+            },
+            {
+              "content": "Set the Axis Ratios:\n- Go to Setting → Basic → Dimensions and set the x-axis: y-axis ratio to 1:1 for a square grid."
+            },
+            {
+              "content": "Configure Axis Distances:\n- For both the x and y axes, go to Setting → xAxis and Setting → yAxis, then set the Distance to 1 to ensure a uniform scale."
+            },
+            {
+              "content": "Hide Axis Numbers (Optional):\n- If your example doesn't need numbers on the axes, go to Setting → xAxis and Setting → yAxis, then uncheck the Show Numbers box."
+            }
+          ]
+        },
+        {
+          "subtitle": "2. Creating the Diagram",
+          "text": [
+            {
+              "content": "Creating the Diagram:",
+              "images": [
+                {
+                  "src": "/src/assets/geogebra_style/geogebra_style4.png",
+                  "alt": "Geogebra Calculator Suite vector setup",
+                  "height": 520,
+                  "width": 1080
+                },
+                {
+                  "src": "/src/assets/geogebra_style/geogebra_style5.png",
+                  "alt": "Highlighting setting option in Geogebra for diagram creation"
+                }
+              ]
+
+            },
+            {
+              "content": "Draw a Vector:\n- Select the Vector tool under Tools → Lines. Use this to create your primary vector."
+            },
+            {
+              "content": "Create an Angle:\n- Use the Circular Sector tool found under Tools → Circles to create angles as necessary."
+            },
+            {
+              "content": "Add a Reference Line:\n- For reference lines, use the Segment tool under Tools → Basic Tools or Tools → Lines."
+            },
+            {
+              "content": "Add Labels:\n- Use the Text tool under Tools → Media to add labels. For vector labels:\n  - Use LaTeX syntax for an overhead arrow (e.g., \\overrightarrow{A} for vector A). Replace A with your vector's label."
+            },
+            {
+              "content": "Add x-axis and y-axis (Optional):\n- If a diagram requires you to create your own axis, use the Vector tool to create it."
+            }
+          ]
+        },
+        {
+          "subtitle": "3. Styling Guidelines",
+          "text": [
+            {
+              "content": "Styling Guidelines:",
+              "images": [
+                {
+                  "src": "/src/assets/geogebra_style/geogebra_style6.png",
+                  "alt": "Geogebra Calculator Suite styling guidelines",
+                  "height": 520,
+                  "width": 1080
+                },
+                {
+                  "src": "/src/assets/geogebra_style/geogebra_style7.png",
+                  "alt": "Highlighting styling elements in Geogebra"
+                }
+              ]
+            },
+            {
+              "content": "Lines:\n- Set the line width to 8 for all lines to maintain uniformity:\n  - Select the Move tool, then click on a line. Use the width slider bar to set the line width to 8."
+            },
+            {
+              "content": "Vectors and Labels:\n- Set vectors, vector arrows, and labels to black for clarity."
+            },
+            {
+              "content": "Angles and Labels:\n- Style angles, their lines, and labels in gray. The theta symbol (θ) should be black and bold."
+            },
+            {
+              "content": "Reference Lines:\n- Set the reference line color to red and make it dotted:\n  - Select the Move tool, click on the line, and choose the first dotted option (to the right of the solid line)."
+            },
+            {
+              "content": "Position Vectors (e.g., R):\n- Color position vectors in blue for easy identification."
+            },
+            {
+              "content": "Axis Lines (Exception):\n- Set the line color to gray with a width of 5."
+            },
+            {
+              "content": "Hide Points:\n- Use the Show/Hide Object tool under Tools → Edit to hide all points of vectors and lines (note: hidden points cannot be edited)."
+            },
+            {
+              "content": "Text Styling:\n- Use Serif font for non-LaTeX text, set all text to Medium size, and make it bold for readability."
+            },
+            {
+              "content": "Export and Cropping:\n- After exporting the diagram as an image, crop the image to one small square away from the last element for a clean, consistent layout."
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

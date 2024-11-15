@@ -1,7 +1,6 @@
 import React from 'react';
 import data from '../src/data/doc_data.json';
 import Section from '../src/components/Section'
-import './App.css'
 
 const Documentation: React.FC = () => {
   const { doc_body, sections } = data;
