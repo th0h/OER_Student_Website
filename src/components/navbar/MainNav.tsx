@@ -1,7 +1,7 @@
 // for medium-larger screens. ex: expanded web viewports.
 import { Button } from '@/components/ui/button';
 import { Link } from 'react-router-dom';
-import COLLabLogo from './COLLabLogoDark.png'
+import COLLabLogo from './assets/COLLabLogoDark.png'
 import {
     NavigationMenu,
     NavigationMenuContent,
@@ -9,8 +9,8 @@ import {
     NavigationMenuLink,
     NavigationMenuList,
     NavigationMenuTrigger
-} from "@/components/ui/navigation-menu"
-import { DropdownMenu, DropdownMenuContent, DropdownMenuTrigger } from '../ui/dropdown-menu-navbar';
+} from "@/components/ui/navigation-menu-navbar"
+import { DropdownMenu, DropdownMenuContent, DropdownMenuTrigger } from '../ui/dropdown-menu';
 import { SearchIcon } from 'lucide-react';
 import { Input } from '../ui/input';
 import { useState } from 'react';
