@@ -1,5 +1,4 @@
 import { LeafyGreen, Fish, Waves, Sun, Dessert} from "lucide-react"
-
 import {
   Sidebar,
   SidebarContent,
