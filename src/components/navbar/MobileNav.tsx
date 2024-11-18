@@ -24,7 +24,7 @@ export default function MobileNav() {
         </Button>
       </SheetTrigger>
 
-      <SheetContent side="right" className="w-[240px] sm:w-[240px]">
+      <SheetContent side="right" className="w-[240px] sm:w-[240px] bg-white">
         <div className="flex flex-col items-start">
           <Button variant="link"
             onClick={() => {
