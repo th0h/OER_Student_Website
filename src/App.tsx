@@ -1,10 +1,10 @@
-import AppRouter from './routers/router'
+import { Outlet } from "react-router-dom"
 import './index.css'
 function App() {
 
   return (
     <>
-      <AppRouter />
+      <Outlet />
     </>
   )
 }
