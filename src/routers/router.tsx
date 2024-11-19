@@ -4,7 +4,7 @@ const AppRouter = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<ColorPalettes />} />
+        <Route path="/palettes" element={<ColorPalettes />} />
       </Routes>
     </Router>
   );
