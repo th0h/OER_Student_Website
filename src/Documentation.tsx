@@ -1,6 +1,6 @@
 import React from 'react';
 import data from '../src/data/doc_data.json';
-import Section from '../src/components/Section'
+import Section from '../src/components/Section';
 import { SidebarProvider, SidebarTrigger } from "@/components/ui/sidebar";
 import AppSideBar from "@/components/app-sidebar";
 
