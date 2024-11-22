@@ -3,14 +3,6 @@ export default {
     darkMode: ["class"],
     content: ["./index.html", "./src/**/*.{ts,tsx,js,jsx}"],
   theme: {
-    screens: {
-  		'mobile': '<640px',
-  		'tablet': '640px',
-  		'laptop': '1024px',
-  		'desktop': '1280px',
-		'2xl': '1440px',  // Larger screens
-		'3xl': '1600px',  // Very large screens (like your desktop)
-  	},
   	extend: {
   		borderRadius: {
   			lg: 'var(--radius)',
@@ -57,6 +49,16 @@ export default {
   				'3': 'hsl(var(--chart-3))',
   				'4': 'hsl(var(--chart-4))',
   				'5': 'hsl(var(--chart-5))'
+  			},
+  			sidebar: {
+  				DEFAULT: 'hsl(var(--sidebar-background))',
+  				foreground: 'hsl(var(--sidebar-foreground))',
+  				primary: 'hsl(var(--sidebar-primary))',
+  				'primary-foreground': 'hsl(var(--sidebar-primary-foreground))',
+  				accent: 'hsl(var(--sidebar-accent))',
+  				'accent-foreground': 'hsl(var(--sidebar-accent-foreground))',
+  				border: 'hsl(var(--sidebar-border))',
+  				ring: 'hsl(var(--sidebar-ring))'
   			}
   		}
   	}
